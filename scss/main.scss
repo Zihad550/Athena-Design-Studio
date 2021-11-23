@@ -1,0 +1,142 @@
+// variables
+$primaryTextColor: #666666;
+$primaryBoxShadow: 0px 0px 10px 1px #312f2f42;
+
+// common css
+header,
+section {
+  margin-bottom: 8rem;
+}
+p {
+  color: $primaryTextColor;
+  line-height: 1.5em;
+}
+
+// components
+.primary-title {
+  font-size: 5rem;
+  line-height: 0.9em;
+}
+
+.primary-btn {
+  background: linear-gradient(to right, #28a37cc7, #225da5b7);
+  color: white;
+  border: none;
+  padding: 0.5rem 2rem;
+  border-top-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+}
+
+// extra small screen styles
+@media only screen and (max-width: 419px) {
+  #our-achievement .achivements {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+// header area css start
+#our-services {
+  .logo-wrapper img {
+    width: 1rem;
+  }
+  .service {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: $primaryBoxShadow;
+    border-top-left-radius: 5.5rem;
+    border-bottom-right-radius: 5.5rem;
+  }
+  .service div {
+    margin-bottom: 1rem;
+  }
+}
+// header area css end
+
+// achivements area css start
+#our-achievement {
+  .achivements {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    width: 100%;
+    color: white;
+  }
+  .achivement {
+    width: 100%;
+    padding: 1.3rem;
+  }
+  .achivement p {
+    color: white;
+    margin-bottom: 0.5rem;
+  }
+  .achivement h2 {
+    color: white;
+    margin-bottom: 0.2rem;
+  }
+  .achivement-1 {
+    background: linear-gradient(to right, #28a37cc7, #225da5b7);
+    color: white;
+    border: none;
+    border-top-right-radius: 3.5rem;
+    border-bottom-left-radius: 3.5rem;
+    box-shadow: $primaryBoxShadow;
+  }
+  .achivement-2 {
+    background: linear-gradient(to right, #28a37cc7, #225da5b7);
+    color: white;
+    border: none;
+    border-bottom-right-radius: 3.5rem;
+    border-top-left-radius: 3.5rem;
+    box-shadow: $primaryBoxShadow;
+  }
+
+  .achivement-icon-wrapper {
+    font-size: 4rem;
+  }
+}
+// achivements area css end
+
+// choose team area css start
+.team {
+  border: 3px solid #07ebcc;
+  padding: 2rem 5rem;
+  border-radius: 2rem;
+}
+// choose team area css end
+
+// get design fixed area
+.get-design-text-area {
+  width: 50%;
+}
+
+// footer area css start
+#footer {
+  .footer-link-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .footer-link {
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    color: black;
+  }
+  .footer-link i {
+  }
+  .footer-link:hover {
+    background: black;
+    color: white;
+  }
+}
+// footer area css ends
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
